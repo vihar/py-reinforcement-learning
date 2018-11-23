@@ -39,11 +39,10 @@ def print_frames(frames):
     for i, frame in enumerate(frames):
         clear_output(wait=True)
         print(frame['frame'].getvalue())
-        print("Timestep: {i + 1}")
-        print("State: {frame['state']}")
-        print("Action: {frame['action']}")
-        print("Reward: {frame['reward']}")
+        print(f"Timestep: {i + 1}")
+        print(f"State: {frame['state']}")
+        print(f"Action: {frame['action']}")
+        print(f"Reward: {frame['reward']}")
         sleep(.1)
-
 
 print_frames(frames)

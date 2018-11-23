@@ -51,6 +51,6 @@ for i in range(1, 100001):
 
     if i % 100 == 0:
         clear_output(wait=True)
-        print("Episode: {i}")
+        print(f"Episode: {i}")
 
 print("Training finished.\n")
